@@ -8,5 +8,9 @@
     /// data and commands to the shell's UI components.</remarks>
     public class ShellViewModel
     {
+        public ShellViewModel()
+        {
+                
+        }
     }
 }

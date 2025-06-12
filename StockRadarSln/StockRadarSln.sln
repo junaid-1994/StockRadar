@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRWpfClient", "SRWpfClient\SRWpfClient.csproj", "{ADE27EC3-D214-4AA5-BC2A-B7576230007C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR.WpfClient", "SRWpfClient\SR.WpfClient.csproj", "{ADE27EC3-D214-4AA5-BC2A-B7576230007C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCore", "WpfCore\WpfCore.csproj", "{D0600120-88D2-4162-9618-81B214E7C868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR.Common", "SR.Common\SR.Common.csproj", "{7400D5CB-8BA0-47E5-ADA6-5B5692134305}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "SR.Common\Common.csproj", "{7400D5CB-8BA0-47E5-ADA6-5B5692134305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WpfClient", "WpfClient", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WcfService", "WcfService", "{AD443BDB-AD8F-40C0-BCE6-761D6A47D53C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR.Service.Contract", "SR.Service.Contract\SR.Service.Contract.csproj", "{E00482DD-2D6E-4B8E-BD6D-425A52488369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR.Service", "SR.Service\SR.Service.csproj", "{4D855509-4C1C-4F64-8C0C-4F5F3CDEBC9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,24 @@ Global
 		{7400D5CB-8BA0-47E5-ADA6-5B5692134305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7400D5CB-8BA0-47E5-ADA6-5B5692134305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7400D5CB-8BA0-47E5-ADA6-5B5692134305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E00482DD-2D6E-4B8E-BD6D-425A52488369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00482DD-2D6E-4B8E-BD6D-425A52488369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00482DD-2D6E-4B8E-BD6D-425A52488369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00482DD-2D6E-4B8E-BD6D-425A52488369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D855509-4C1C-4F64-8C0C-4F5F3CDEBC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D855509-4C1C-4F64-8C0C-4F5F3CDEBC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D855509-4C1C-4F64-8C0C-4F5F3CDEBC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D855509-4C1C-4F64-8C0C-4F5F3CDEBC9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADE27EC3-D214-4AA5-BC2A-B7576230007C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D0600120-88D2-4162-9618-81B214E7C868} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7400D5CB-8BA0-47E5-ADA6-5B5692134305} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E00482DD-2D6E-4B8E-BD6D-425A52488369} = {AD443BDB-AD8F-40C0-BCE6-761D6A47D53C}
+		{4D855509-4C1C-4F64-8C0C-4F5F3CDEBC9B} = {AD443BDB-AD8F-40C0-BCE6-761D6A47D53C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {388E6D47-9C54-41A4-9C73-B08AF387D0C5}

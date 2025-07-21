@@ -2,11 +2,12 @@
   "profiles": {
     "SR.Service.Host": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:50189;http://localhost:50190",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:50189;http://localhost:50190"
+      }
     }
   }
 }

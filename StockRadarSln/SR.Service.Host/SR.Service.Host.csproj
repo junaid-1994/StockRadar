@@ -9,10 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="CoreWCF.Http" Version="1.7.0" />
+    <PackageReference Include="CoreWCF.NetTcp" Version="1.7.0" />
     <PackageReference Include="CoreWCF.Primitives" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SR.Common\Common.csproj" />
     <ProjectReference Include="..\SR.Service.Contract\SR.Service.Contract.csproj" />
     <ProjectReference Include="..\SR.Service\SR.Service.csproj" />
   </ItemGroup>

@@ -13,13 +13,16 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
 
         <Grid x:Name="GridSideList" 
               Grid.Row="1">
-            
+            <ListBox x:Name="ListBoxStock"
+                     ItemsSource="{Binding StockCollection, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}">
+                
+            </ListBox>
         </Grid>
         
         <Grid x:Name="GridSideDetail" 

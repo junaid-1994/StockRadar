@@ -44,7 +44,7 @@ namespace WpfCore
 
                 var viewModelName = viewName?.Replace(Constants.ViewNamePostfix, Constants.ViewModelNamePostfix);
                 var viewModelInstance = Activator.CreateInstance(viewAssembly.FullName, viewModelName);
-                viewInstance.DataContext = viewModelInstance;
+                viewInstance.DataContext = viewModelInstance.Unwrap();
             }
         }
     }

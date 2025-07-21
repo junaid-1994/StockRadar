@@ -10,9 +10,13 @@
 
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc" Version="9.0.537" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.1.2" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.1.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SR.Service.Contract\SR.Service.Contract.csproj" />
+    <ProjectReference Include="..\WcfCore\WcfCore.csproj" />
     <ProjectReference Include="..\WpfCore\WpfCore.csproj" />
   </ItemGroup>
 

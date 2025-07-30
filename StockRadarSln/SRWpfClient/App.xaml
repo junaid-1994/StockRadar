@@ -1,8 +1,15 @@
-﻿<prism:PrismApplication x:Class="SRWpfClient.App"
-                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                        xmlns:prism="http://prismlibrary.com/">
+﻿<prism:PrismApplication
+    x:Class="SRWpfClient.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:prism="http://prismlibrary.com/">
     <prism:PrismApplication.Resources>
-         
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WpfCore;component/Resources/AppResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>

@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Default Style for LABELs  -->
+    <Style TargetType="Label">
+        <Setter Property="Padding" Value="5,0" />
+    </Style>
+
+    <!--  Bold font weight style for textBlock  -->
+    <Style x:Key="TextBlockBtyle" TargetType="TextBlock">
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+</ResourceDictionary>

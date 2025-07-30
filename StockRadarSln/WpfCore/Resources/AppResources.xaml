@@ -6,7 +6,7 @@
     </Style>
 
     <!--  Bold font weight style for textBlock  -->
-    <Style x:Key="TextBlockBtyle" TargetType="TextBlock">
+    <Style x:Key="BoldTextBlockStyle" TargetType="TextBlock">
         <Setter Property="FontWeight" Value="Bold" />
     </Style>
 </ResourceDictionary>

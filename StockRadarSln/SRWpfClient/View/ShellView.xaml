@@ -52,7 +52,7 @@
                             <Label x:Name="LabelCompanyName" Content="Company" />
                             <TextBlock
                                 x:Name="TextBlockCompanyName"
-                                Style="{StaticResource BoldTextBlocktyle}"
+                                Style="{StaticResource BoldTextBlockStyle}"
                                 Text="{Binding CompanyName}"
                                 Grid.Column="1" />
 
@@ -62,7 +62,7 @@
                                 Grid.Row="1" />
                             <TextBlock
                                 x:Name="TextBlockVolume"
-                                Style="{StaticResource BoldTextBlocktyle}"
+                                Style="{StaticResource BoldTextBlockStyle}"
                                 Text="{Binding Volume}"
                                 Grid.Row="1"
                                 Grid.Column="1" />
@@ -73,7 +73,7 @@
                                 Grid.Row="2" />
                             <TextBlock
                                 x:Name="TextBlockCurrentPrice"
-                                Style="{StaticResource BoldTextBlocktyle}"
+                                Style="{StaticResource BoldTextBlockStyle}"
                                 Text="{Binding CurrentPrice}"
                                 Grid.Row="2"
                                 Grid.Column="1" />
@@ -87,8 +87,6 @@
 
         <ItemsControl
             x:Name="ItemsControlSideDetail"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
             AllowDrop="True"
             DragOver="WrapPanelSideDetail_DragOver"
             Drop="WrapPanelSideDetail_Drop"
@@ -97,7 +95,7 @@
             Grid.Column="1">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel />
+                    <WrapPanel Background="AliceBlue" />
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
